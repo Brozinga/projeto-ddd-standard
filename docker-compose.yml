@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  freelacontrol-db:
+    image: 'bitnami/postgresql:latest'
+    container_name: freela-db
+    volumes:
+      - 'freelacontroldb:/bitnami'
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRESQL_USERNAME=freela-admin
+      - POSTGRESQL_PASSWORD=freela@c0ntr0l
+      - POSTGRESQL_DATABASE=freelacontrol-db
+volumes:
+    freelacontroldb:

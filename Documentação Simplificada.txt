@@ -1,0 +1,63 @@
+O FreelaControl contem 3 itens principais,
+Front-End      - HTML Básico / Vue.js / React.js
+Back-End       - API C# .NET Core
+Banco de Dados - Postgresql
+
+FreelControl tem que cadastrar o seu usuário principal que pode ser uma pessoa ou empresa.
+E tem que cadastrar os seus clientes, para que seus clientes acessem as solicitações.
+
+Cadastrar um novo Freelancer com imagens e anotações por parte do cliente, Edita-lo, e Deleta-lo, Colocar como concluido.
+
+Calcular valor/hora do Trabalho, baseado no valor mensal estipulado
+a conta é valor mensal/20/8.
+
+A possíbilidade de escolher valor HORA ou FIXO.
+
+Emitir um orçamento.
+Emitir nota do Trabalho (Não é nota fiscal).
+
+
+Desenho da Base de dados ( SQL Tradicional )
+ -USUARIOS
+   ID - Guid Unico - guid.
+   Nome - Da Pessoa ou empresa - varchar(100).
+   Identificador - CNPJ ou CPF - Pessoa ou Empresa - varchar(100).
+   E-mail - Contato/Login - UNICO varchar(100).
+   Senha - Hash Unico varchar(255).
+   NivelAcesso - Se é Administrador ou Cliente - varchar(13).
+   Rua - varchar (255)
+   Numero - varchar (50)
+   Bairro - varchar (100)
+   Cidade - varchar (100)
+   Estado - varchar (100)
+   cep - varchar (50)
+   complemento - varchar (150)
+   TelefoneUm - Primeiro telefone - varchar (20).
+   TelefoneDois - Segundo Telefone - varchar (20).
+   DataCadastro - Data e Hora - TimeStamp 
+   status - Se o usuário está ativo - boolean.
+
+-TRABALHOS
+   ID - Guid Unico - guid.
+   Titulo - varchar (150)
+   Descrição - Text
+   Prazo - int (DIAS)
+   Status - boolean
+   ValorHora - decimal
+   ValorFechado - decimal
+   DataEntrega - TimeStamp
+   DataCadastro - TimeStamp
+
+
+UPLOADS
+   ID int
+   TrabalhoFK - Guid Unico
+   LinkUpload - varchar(255)
+   DataUpload - TimeStamp
+
+CONFIGURACOES
+   ID Configuracao - Int
+   ValorCobradoMensal - decimal
+   DiaTrabalhadosMes - Int
+   HorasTrabalho -Int
+   DataConfiguracao TimeStamp

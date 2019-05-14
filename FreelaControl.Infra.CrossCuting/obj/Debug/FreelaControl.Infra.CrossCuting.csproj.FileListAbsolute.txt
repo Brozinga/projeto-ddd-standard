@@ -1,0 +1,6 @@
+E:\PROJETOS\FreelaControl\FreelaControl.Infra.CrossCuting\bin\Debug\FreelaControl.Infra.CrossCuting.dll
+E:\PROJETOS\FreelaControl\FreelaControl.Infra.CrossCuting\bin\Debug\FreelaControl.Infra.CrossCuting.pdb
+E:\PROJETOS\FreelaControl\FreelaControl.Infra.CrossCuting\obj\Debug\FreelaControl.Infra.CrossCuting.csprojAssemblyReference.cache
+E:\PROJETOS\FreelaControl\FreelaControl.Infra.CrossCuting\obj\Debug\FreelaControl.Infra.CrossCuting.csproj.CoreCompileInputs.cache
+E:\PROJETOS\FreelaControl\FreelaControl.Infra.CrossCuting\obj\Debug\FreelaControl.Infra.CrossCuting.dll
+E:\PROJETOS\FreelaControl\FreelaControl.Infra.CrossCuting\obj\Debug\FreelaControl.Infra.CrossCuting.pdb
